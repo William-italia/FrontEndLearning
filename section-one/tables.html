@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      table {
+        border-collapse: collapse;
+        width: 800px;
+      }
+
+      table td,
+      table th {
+        border: 1px solid #ccc;
+        padding: 5px;
+        text-align: left;
+      }
+
+      table caption {
+        caption-side: top;
+        text-align: left;
+        font-style: italic;
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+
+      tfoot td,
+      table th {
+        background: rgba(219, 219, 219, 0.945);
+      }
+
+      tfoot td {
+        font-style: italic;
+      }
+
+      .responsive-table {
+        max-width: 100%;
+        overflow-x: auto;
+      }
+
+      .azul {
+        background-color: rgb(135, 248, 248);
+      }
+    </style>
+  </head>
+  <body>
+    <p>Lorem ipsum dolor sit.</p>
+    <div class="responsive-table">
+      <table>
+        <caption>
+          Uma descrição para a tabela
+        </caption>
+        <thead>
+          <tr>
+            <th>Título 1</th>
+            <th>Título 1</th>
+            <th>Título 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>corpo 1</td>
+            <td>corpo 2</td>
+            <td>corpo 3</td>
+          </tr>
+          <tr>
+            <td colspan="2" style="background: rgb(253, 170, 184)">Aqui</td>
+            <td>corpo 2</td>
+          </tr>
+          <tr>
+            <td>corpo 1</td>
+            <td>corpo 2</td>
+            <td>corpo 3</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="2" rowspan="2"></td>
+            <td rowspan="" class="azul">TOTAL:</td>
+          </tr>
+          <tr>
+            <td class="azul">R$499,99</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
