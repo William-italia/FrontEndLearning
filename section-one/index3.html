@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #blue {
+        background-color: rgb(0, 255, 128);
+      }
+      .background {
+        background-color: crimson;
+      }
+      #cian {
+        background-color: aquamarine;
+      }
+      h1 {
+        background-color: dimgray;
+      }
+      .Negrito {
+        color: red;
+      }
+      .saas {
+        background-color: rgb(83, 83, 83);
+      }
+      .video1 {
+        border-radius: 3rem;
+        width: 20rem;
+        height: 17rem;
+      }
+
+      .green {
+        color: rgb(9, 223, 9);
+        font-size: 24px;
+      }
+
+      #EAD {
+        color: rgb(0, 110, 255);
+        font-size: 20px;
+        text-decoration: none;
+      }
+
+      #imgDS {
+        width: 45rem;
+        width: 45rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="blue">Meu titulo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+    <h2 id="cian" class="background">Meu titulo</h2>
+    <aside>
+      <p>
+        Lorem ipsum dolor sit amet consectetur
+        <i><b style="color: red">adipisicing</b></i> elit. Est
+        <b style="color: red">2<sup>2</sup></b>
+        assumenda nulla tempori recusandae illum odio cumque aliquid.
+        <b style="color: red">h<sub>2</sub>0</b>
+      </p>
+    </aside>
+    <h3 class="background-cian">Meu titulo</h3>
+    <p>
+      <span class="green">Lorem</span> ipsum dolor sit amet consectetur
+      adipisicing elit. Est assumenda nulla temporibus nam maxime asperiores
+      magni distinctio, expellum odio cumque aliquid.
+    </p>
+    <hr />
+    <h4>Meu titulo</h4>
+    <p class="saas" style="color: rgb(250, 185, 8)">
+      Lorem ipsum dolor sit amet consectetur
+      <b class="Negrito">adipisicing</b> elit. Est assumenda nulla temporibus
+      nam maxime asperiores magni distinctio, expedita voluptate libero,
+    </p>
+    <br />
+    <hr />
+    <h5>Meu titulo</h5>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. .</p>
+    <h6>Meu titulo</h6>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Est assumenda
+      nulla tempori.
+    </p>
+    <br />
+    <hr />
+    <nav>
+      <a
+        id="EAD"
+        href="https://ead.unisantos.br/cursos-graduacao/analise-e-desenvolvimento-de-sistemas-ead"
+        target="_blank"
+        rel="nofollow"
+        ><b>Universidade católica de santos</b>
+        <br />
+        <img
+          id="imgDS"
+          src="https://grupodata.com.br/wp-content/uploads/2020/06/GD_dev-sistemas.png"
+          alt="Homem sentado programando"
+      /></a>
+    </nav>
+    <div>
+      <hr />
+      <pre>
+        <code>
+ static void efetuasoma()
+ 
+            {
+              try
+              {
+        
+                Console.Clear();
+                Console.WriteLine("- - -          SOMA          - - -");
+                Console.Write("\nDigite um numero: ");
+                double numeroUm = Convert.ToDouble(Console.ReadLine());
+                Console.Write("Digite mais um numero: ");
+                double numeroDois = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine($"\nResulado:\n{numeroUm} + {numeroDois} = {numeroUm + numeroDois}");
+              }
+              catch (FormatException)
+              {
+                Console.Clear();
+                Console.WriteLine("Número em formato inválido.");
+              }
+            }
+        </code>
+      </pre>
+    </div>
+  </body>
+</html>
