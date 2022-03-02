@@ -5,6 +5,155 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <style>
+      body {
+        font-size: 24px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      label {
+        cursor: pointer;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <form action="#" method="get" target="_blank" autocomplete="off">
+      <p>O formulario</p>
+      <p>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="ex.: jorgetenis1@outlook.com"
+        />
+      </p>
+      <p>
+        <label for="nome">Nome:</label>
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Seu nome"
+          required
+          value="Roberto"
+        />
+      </p>
+      <p>
+        <label for="Password">Password:</label>
+        <input
+          type="password"
+          id="Password"
+          name="Password"
+          placeholder="digite sua senha."
+          required
+        />
+      </p>
+
+      <p>
+        <label for="dev1">Sou um Dev:</label>
+        <input type="checkbox" id="dev1" name="dev1" value="sim" /><br />
+        <label for="dev2">Sou um Dev:</label>
+        <input type="checkbox" id="dev2" name="dev2" value="sim" /><br />
+        <label for="dev3">Sou um Dev:</label>
+        <input type="checkbox" id="dev3" name="dev3" value="sim" />
+      </p>
+
+      <p>
+        Gênero:<br />
+        <label for="masculino">Masculino</label>
+        <input
+          type="radio"
+          id="masculino"
+          name="genero"
+          value="masculino"
+          checked
+        /><br />
+        <label for="feminino">Feminino</label>
+        <input
+          type="radio"
+          id="feminino"
+          name="genero"
+          value="feminino"
+        /><br />
+        <label for="outro">Outro</label>
+        <input type="radio" id="outro" name="genero" value="outro" />
+      </p>
+
+      <p>
+        <label for="cor">Sua cor favorita:</label>
+        <input type="color" id="cor" name="cor" value="#0099cc" />
+      </p>
+
+      <p>
+        <label for="date">date:</label>
+        <input type="date" id="date" name="date" value="2022-03-02" />
+      </p>
+      <!-- <p>
+        <label for="datetime">datetime:</label>
+        <input type="datetime" id="datetime" name="datetime" value="123123" />
+      </p> -->
+      <p>
+        <label for="datetime-local">date:</label>
+        <input
+          type="datetime-local"
+          id="datetime-local"
+          name="datetime-local"
+          value="2022-03-02T14:42"
+        />
+      </p>
+      <p>
+        <label for="time">time:</label>
+        <input type="time" id="time" name="time" value="14:44:56" />
+      </p>
+      <p>
+        <label for="file">Sua foto:</label>
+        <input
+          type="file"
+          id="file"
+          name="file"
+          accept=".png, .svg, image/*"
+          multiple
+        />
+      </p>
+      <p>
+        <label for="Idade">Idade:</label>
+        <input type="Number" id="Idade" name="Idade" min="18" max="100" />
+      </p>
+
+      <p>
+        <label for="select">Selecione alguma opção</label>
+        <select id="select" name="select">
+          <optgroup label="teste">
+            <option value="qualquer1" label="Label 1"></option>
+            <option value="qualquer2" label="Label 2"></option>
+            <option value="qualquer3" label="Label 3" selected></option>
+            <option value="qualquer4" label="Label 4" disabled></option>
+          </optgroup>
+          <optgroup label="teste1">
+            <option value="qualquer5" label="Label 5"></option>
+            <option value="qualquer6" label="Label 6"></option>
+            <option value="qualquer7" label="Label 7"></option>
+            <option value="qualquer8" label="Label 8"></option>
+          </optgroup>
+        </select>
+      </p>
+
+      <p>
+        <label for="textarea">textarea</label>
+        <textarea name="textarea" id="textarea" cols="9" rows="3"></textarea>
+      </p>
+
+      <p>
+        <label for="range">range</label>
+        <input type="range" id="range" name="range" />
+      </p>
+
+      <p>
+        <button type="reset">Reset</button>
+        <button type="submit">Enivar</button>
+      </p>
+    </form>
+  </body>
 </html>
