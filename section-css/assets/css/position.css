@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+}
+
+/* .pai {
+  height: 300vh;
+}
+
+.filha1,
+.filha2,
+.filha3 {
+  width: 300px;
+  height: 300px;
+  background: red;
+  margin: 10px;
+  position: static;
+}
+
+/* .filha2 {
+  position: absolute;
+  background: yellowgreen;
+  z-index: -1;
+}
+
+.filha1 {
+  position: absolute;
+  top: 50%;
+  margin-top: -150px;
+  left: 50%;
+  margin-left: -150px;
+  z-index: -2;
+} */
+
+/* .filha2 {
+  background: yellowgreen;
+}
+
+.filha1 {
+}
+
+.filha3 {
+  background: blue;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+
+.outra {
+  position: absolute;
+  font-size: 50px;
+  background-color: white;
+  top: 50px;
+  left: 50px;
+}  */
+
+/* .pai {
+  height: 300vh;
+}
+
+.filha1,
+.filha2,
+.filha3 {
+  width: 300px;
+  height: 300px;
+  background: red;
+  margin: 10px;
+  position: static;
+}
+
+.filha2 {
+  position: fixed;
+  background: yellowgreen;
+  top: 30%;
+  right: 0;
+  z-index: 1;
+}
+
+.filha1 {
+}
+
+.filha3 {
+  background: blue;
+  position: relative;
+  top: 100px;
+  left: 100px;
+} */
+
+ul {
+  height: 100px;
+  overflow-y: auto;
+  text-decoration: none;
+}
+
+ul li.sticky {
+  position: sticky;
+  background: gray;
+  top: 0;
+}
