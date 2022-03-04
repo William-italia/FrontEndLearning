@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  direction: ltr;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  line-height: 25px;
+  text-align: left;
+  text-decoration: underline;
+  text-indent: 50px;
+  text-shadow: -1px 1px 0.5px rgb(148, 136, 255);
+  text-transform: capitalize;
+}
