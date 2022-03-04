@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* .pai h1 + p {
+  color: yellow;
+}
+
+.pai p + h1 {
+  color: red;
+}
+
+.pai h1 ~ p {
+  color: green;
+} */
+
+.heading {
+  color: rgb(255, 0, 212);
+}
+
+.heading:hover {
+  color: rgba(255, 0, 242, 0.322);
+}
