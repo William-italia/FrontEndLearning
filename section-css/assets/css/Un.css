@@ -14,7 +14,7 @@ html {
   background: aqua;
 }
 
-.pai > div {
+[pai] > div {
   width: 50%;
   height: 50rem;
   background: rgb(12, 71, 71);
