@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box model /margin & padding</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    .box {
+      width: 500px;
+      background: #f4f4f4;
+      border: 3px solid gray ;
+
+      /* padding on all sides */
+      padding: 20px;
+
+      /* padding shorthand = top, left, bottom, right */
+      padding: 10px 20px 10px 20px;
+
+      /* padding shorthand = top/bottom left/right */
+      padding: 10px 20px;
+      /* Margin on all sides */
+      margin: 20px;
+
+        
+    }
+
+    .box h3 {
+      padding-bottom: 10px;
+    }
+    .box p {
+      margin: 0px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h3>Box one</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti tempore aperiam distinctio delectus hic quaerat iure qui atque quas quibusdam, quam soluta maxime quos nulla neque! Saepe, possimus molestias.</p>
+  </div>
+  <div class="box">
+    <h3>Box two</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti tempore aperiam distinctio delectus hic quaerat iure qui atque quas quibusdam, quam soluta maxime quos nulla neque! Saepe, possimus molestias.</p>
+  </div>
+  <!-- <div class="box">
+    <h3>Box three</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti tempore aperiam distinctio delectus hic quaerat iure qui atque quas quibusdam, quam soluta maxime quos nulla neque! Saepe, possimus molestias.</p>
+  </div>
+  <div class="box">
+    <h3>Box four</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium deleniti tempore aperiam distinctio delectus hic quaerat iure qui atque quas quibusdam, quam soluta maxime quos nulla neque! Saepe, possimus molestias.</p>
+  </div> -->
+</body>
+</html>

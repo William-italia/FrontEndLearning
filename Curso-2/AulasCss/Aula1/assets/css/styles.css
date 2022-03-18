@@ -1,6 +1,5 @@
 body {
   background: black;
-  color: white;
 }
 /* . is for classes */
 .green-heading {
@@ -9,7 +8,7 @@ body {
 
 /* # is for ID */
 #welcome {
-background: deeppink;
+background: rgb(241, 241, 241);
 }
 
 #welcome, #about {

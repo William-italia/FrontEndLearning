@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float and align</title>
+  <style>
+   * {
+     box-sizing: border-box;
+   }
+   
+   body {
+     font-size: 20px;
+     font-family: 1.6em;
+   }
+
+   .box {
+    border: 3px solid red;
+    margin-bottom: 10px;
+    padding: 20px;
+   }  
+
+   .container {
+     max-width: 960px;
+     margin: 30px auto;
+   }
+
+   #box-2 {
+    border-color: rgb(255, 0, 242);
+
+    width: 68%;
+    height: 346px;
+    float: left;
+   }
+
+   #box-3 {
+    border-color: rgb(16, 255, 191);
+
+     width: 30%;
+     float: right;
+   }
+
+   #box-5{
+     border-color: blue;
+    width: 68%;
+    float: right;
+    height: 346px;
+   }
+
+   #box-6 {
+    width: 30%;
+    height: 655px;
+    float: left;
+    border-color: darkgoldenrod;
+   }
+
+   #box-7 {
+     float: right;
+     width: 68%;
+   }
+
+   .clr {
+     clear: both;
+   }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+  <div id="box-1" class="box">
+    <h3>Heading one</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius autem impedit soluta accusantium, assumenda blanditiis qui eligendi dicta molestiae voluptas quia corporis reiciendis odit cumque beatae tempora iure, laborum laboriosam!</p>
+  </div>
+  <div id="box-2" class="box">
+    <h3>Heading two</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius autem impedit soluta accusantium, assumenda blanditiis qui eligendi dicta molestiae voluptas quia corporis reiciendis odit cumque beatae tempora iure, laborum laboriosam!</p>
+  </div>
+  <div id="box-3" class="box">
+    <h3>Heading three</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius autem impedit soluta accusantium, assumenda blanditiis qui eligendi dicta molestiae voluptas quia corporis reiciendis odit cumque beatae tempora iure, laborum laboriosam!</p>
+  </div>
+  <div class="clr"></div>
+  <div id="box-4" class="box">
+    <h3>Heading Four</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius autem impedit soluta accusantium, assumenda blanditiis qui eligendi dicta molestiae voluptas quia corporis reiciendis odit cumque beatae tempora iure, laborum laboriosam!</p>
+  </div>
+  <div id="box-5" class="box">
+    <h3>Heading two</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius autem impedit soluta accusantium, assumenda blanditiis qui eligendi dicta molestiae voluptas quia corporis reiciendis odit cumque beatae tempora iure, laborum laboriosam!</p>
+  </div>
+  <div id="box-6" class="box">
+    <h3>Heading three</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius autem impedit soluta accusantium, assumenda blanditiis qui eligendi dicta molestiae voluptas quia corporis reiciendis odit cumque beatae tempora iure, laborum laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo reiciendis fuga dignissimos sed incidunt enim qui ipsa, ratione ipsum, architecto, explicabo in tempora quis adipisci! Inventore, dignissimos voluptas! Alias, quo?</p>
+  </div>
+  <div id="box-7" class="box">
+    <h3>Heading three</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius autem impedit soluta accusantium, assumenda blanditiis qui eligendi dicta molestiae voluptas quia corporis reiciendis odit cumque beatae tempora iure, laborum laboriosam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo reiciendis fuga dignissimos sed incidunt enim qui ipsa, ratione ipsum, architecto, explicabo in tempora quis adipisci! Inventore, dignissimos voluptas! Alias, quo?</p>
+  </div>
+  
+</div>
+</body>
+</html>
