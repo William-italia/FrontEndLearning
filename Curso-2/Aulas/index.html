@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width= , initial-scale=1.0">
+  <meta name="description" content="This is my web site description">
+  <meta name="keyboards" content="web develoment, web design">
+  <!-- Do not index page -->
+  <meta name="robots" content="NOINDEX, NOFOLLOW">
+  <title>Title</title>
+</head>
+<body>
+  <section>
+  <!-- headings -->
+  <h1>heading 1</h1>
+  <h2>heading 1</h2>
+  <h3>heading 1</h3>
+  <h4>heading 1</h4>
+  <h5>heading 1</h5>
+  <h6>heading 1</h6>
+
+  <!-- paragraph -->
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus et magni excepturi dolor veritatis voluptatibus commodi non dolorum <strong>doloremque</strong> harum nostrum a iste, possimus expedita sunt illo earum dolores assumenda deserunt quod eaque soluta rerum aliquam! Nisi, laboriosam possimus. Fugiat doloribus alias repellendus, porro natus, ut obcaecati <em>exercitationem aperiam dolores neque harum. Aliquam architecto delectus</em>, 
+    <!-- line break -->
+  <br> 
+  <br>dolor hic rerum temporibus cumque molestiae quisquam eaque quibusdam. Cumque delectus, <b>magni</b> minus iusto nihil distinctio! Dolorem necessitatibus itaque quidem minus adipisci harum cupiditate.
+  
+  <!-- horizontal rule -->
+  <hr>
+  Dolorum, blanditiis. Amet cum corrupti eius, nihil autem eum, reiciendis, dolore neque minima provident quae nesciunt quis qui busdam asperiores explicabo cumque?</p>
+</section>
+<hr>
+<section>
+  <!-- external links -->
+  <p>
+    <a href="http://google.com">Click for google</a>
+  </p>
+  <p>
+    <a href="http://google.com" target="_blank" >Click for google</a>
+  </p>
+  
+  <!-- internal links -->
+  <p>
+    <a href="./test.html">Test</a>
+  </p>
+
+  <!-- Local img -->
+  <!-- <img src="./imagenice.png" alt="My image "> -->
+
+  <!-- remote img -->
+  <img src="https://images.unsplash.com/photo-1508919801845-fc2ae1bc2a28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aW1nfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="My image url" width="200">
+</section>
+<hr>
+
+<br>
+<br>
+<br>
+<section>
+  <!-- list and tables -->
+  <!-- unordered lists -->
+  <ul> 
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+  </ul>
+
+    <!-- Ordered lists -->
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ol>
+
+    <!-- Nested lists -->
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2
+        <ul>
+          <li>Nested item 1</li>
+          <li>Nested item 2</li>
+        </ul>
+      </li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+
+    <!-- Tables -->
+    <table style="width: 600px; align-items: center;">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>jdoe@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Roberto</td>
+          <td>Carlos</td>
+          <td>Robertocarlos@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Kate</td>
+          <td>Smith</td>
+          <td>KateSmith@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+</section>
+<br>
+<hr>
+
+<br>
+<br>
+<section>
+  <!-- Forms & Input -->
+  <form action="process.php">
+    <div>
+      <!-- text -->
+      <label for="Name">First Name:</label><br>
+      <input type="text" id="Name" name="Name" placeholder="Roberto">
+    </div>
+    <div>
+      <!-- text -->
+      <label for="LName">Last Name:</label><br>
+      <input type="text" id="LName" name="LName" value=" Carlos">
+    </div>
+    <div>
+      <!-- email -->
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="enter an email">
+    </div>
+    <div>
+      <!-- textarea -->
+      <label for="massage">Massage:</label><br>
+      <textarea name="massage" id="massage" cols="30" rows="5"></textarea>
+    </div>
+    <div>
+      <!-- select -->
+      <label for="sex">Sex</label>
+      <select name="sex" id="sex">
+        <option value="male">Male</option>
+        <option value="female" selected>Famele</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div>
+      <!-- number -->
+      <label for="age">age</label><br>
+      <input type="number" id="age" name="age">
+    </div>
+    <div>
+      <!-- date -->
+      <label for="birthdate">BirdthDate</label><br>
+      <input type="date" name="birthdate" id="birthdate"> 
+    </div>
+    <div>
+      <!-- radio -->
+      <label for="membership">Membership</label><br>
+      <input type="radio" name="membership" id="membership" value="simple">simple
+      <input type="radio" name="membership" id="membership" value="standard" checked>standard
+      <input type="radio" name="membership" id="membership" value="super">super 
+    </div>
+    <div>
+      <!-- checkbox -->
+      <label for="membership">I like..</label><br>
+      <input type="checkbox" name="likes" id="likes" value="Bike">Bike
+      <input type="checkbox" name="likes" id="likes" value="Car" checked>Car
+      <input type="checkbox" name="likes" id="likes" value="boat">Boat 
+    </div>
+    <!-- input submit -->
+    <input type="submit" value="Submit">
+    <!-- button submit -->
+    <!-- <button type="submit" >Submit</button> -->
+    <button type="reset">reset</button>
+  </form>
+  
+</section>
+</body>
+</html>
