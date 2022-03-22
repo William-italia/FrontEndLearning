@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vh & vw units</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    header {
+      background: #333 url('https://source.unsplash.com/daily') no-repeat center center/cover;
+      color: #fff;
+      height: 100vh; 
+      /* width: 50vw; */
+      text-align: center;
+      padding: 2rem ;
+      padding-top: 15rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    header p {
+      margin: 1rem 0;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 500;
+      background: #96fbdd;
+      color: rgb(82, 82, 82);
+      padding: 0.75rem 2rem;
+    }
+
+    .btn:hover {
+      background-color: #d4fff2;
+    }
+
+    .text-primary {
+      color: #96fbdd;
+    }
+
+    section {
+      padding: 2rem;
+
+    }
+
+    @media (max-height: 450px) {
+      header {
+        padding-top: 5rem;
+      }
+
+      header p {
+        margin-bottom: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><span class="text-primary">Welcome</span> The Our Website</h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, praesentium magnam. Impedit corrupti quidem natus!
+    </p>
+    <a href="#" class="btn">Find Out More</a>
+  </header>
+
+  <section>
+    <h3>About Our Company</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae porro obcaecati a quaerat magni optio!
+    </p>
+  </section>
+</body>
+</html>
