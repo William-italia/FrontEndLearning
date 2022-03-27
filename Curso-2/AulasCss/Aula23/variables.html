@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variables css</title>
+  <style>
+    :root {
+      --max-width: 960px;
+      --primary-color: rgb(41, 41, 41);
+      --secondary-color: rgb(150, 150, 150);
+      --light-color: #3f3f3f;
+      --box-1-width: 5;
+      --box-2-width: 1;
+      --box-3-width: 4;
+    }
+
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4;
+      background: var(--light-color);
+    }
+
+    header {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background: var(--primary-color);
+      color: #fff;
+    }
+
+    header h1 {
+      text-align: center;
+      width: 80%;
+      border-top: 5px solid var(--secondary-color);
+      border-bottom: 5px solid var(--secondary-color);
+    }
+
+    .container {      
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      max-width: var(--max-width);
+      padding: 2.5rem;
+    }
+
+    .box {
+      padding: 1rem;
+      margin: 1rem;
+      background: var(--primary-color);
+      border-bottom: 5px solid var(--secondary-color);
+      color: #fff;
+    }
+
+    .box-1 {flex: var(--box-1-width);}
+    .box-2 {flex: var(--box-2-width);}
+    .box-3 {flex: var(--box-3-width);}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CSS variables</h1>
+  </header>
+
+  <div class="container">
+    <div class="box box-1">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, dicta.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, dicta</p>
+    </div>
+    <div class="box box-2">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, dicta.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, dicta</p>
+    </div>
+    <div class="box box-3">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, dictaLorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, dicta.</p>
+    </div>
+  </div>
+</body>
+</html>

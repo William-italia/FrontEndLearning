@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation KeyFrame</title>
+  <style>
+    body {
+      background: #333;
+
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      padding: 1rem;
+      margin: 0.5rem;
+    }
+
+    .box {
+      background: #fff;
+      width: 200px;
+      height: 10px;
+      position: relative;
+      margin-top: 1rem;
+      /* animation-name: animate-1;
+      animation-duration: 5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      animation-delay: 2;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out; */
+      animation: animate-1 5s forwards 2s ease-in-out;
+    }
+
+    @keyframes animate-1 {
+      from {
+        top:0;
+      }
+
+      to {
+        width: 600px;
+        background: red;
+        top: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1>Loading...</h1>
+  <div class="box"></div>
+</div>
+</body>
+</html>

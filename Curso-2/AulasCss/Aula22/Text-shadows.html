@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Shadows</title>
+  <style>
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 4rem;
+    }
+
+
+    h1.a {
+      /* h-shadow | v-shadow | color */
+      text-shadow: 2px 2px aquamarine;
+    }
+
+    h1.b {
+      /* h-shadow | v-shadow | blur | color */
+      text-shadow: 4px 3px 7px purple;
+    }
+    
+    h1.c {
+      /* white text */
+      color: white;
+      text-shadow: 2px 2px 10px yellowgreen;
+    }
+
+    h1.d {
+      /* negative values */
+      text-shadow: -4px 3px 7px purple;
+    }
+
+  </style>
+</head>
+<body>
+  <h1 class="a">Welcome To My Course</h1>
+  <h1 class="b">Welcome To My Course</h1>
+  <h1 class="c">Welcome To My Course</h1>
+  <h1 class="d">Welcome To My Course</h1>
+</body>
+</html>
