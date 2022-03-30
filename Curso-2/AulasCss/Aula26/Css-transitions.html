@@ -23,6 +23,7 @@
       background: #fff;
       width: 250px;
       height: 250px;
+      border-radius: 15px;
       /* transition-property: background;
       transition-duration: 2s;
       transition-delay: 3s;
@@ -32,15 +33,25 @@
       cursor: pointer;
     } 
 
-    span {
-      color: white;
-      font-size: 2rem;      
-      text-align: center;
-      transition: all 1s ease-in-out;
+    .box .span {
+     transition: animate 3s ease-in-out;
+     color: white;
     }
 
-    span:hover {
-      color: rgb(243, 70, 70);
+    @keyframes animate {
+      from {
+        color: #fff;
+      }
+
+      to {
+        display: block;
+        color: red;
+      }
+    }
+    
+    .span::after {
+      display: inline-block;
+      color: #fff;
     }
 
     .box:hover {
@@ -49,12 +60,12 @@
       height: 100px;
       width: 100px;
       position: absolute;
-      color: black;
+      color: rgb(255, 255, 255);
     }
-
+  
   </style>
 </head>
 <body>
-  <div class="box"><span>&#10005;</span></div>
+  <div class="box"><span class="span">&#10005;</span></div>
 </body>
 </html>
