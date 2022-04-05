@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      font-size: 40px;
+    }
+
+    .grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      /* grid-template-columns: 200px 1fr 3fr; */
+      /* grid-template-columns: 1fr 1fr 1fr; */
+      /* grid-template-columns: repeat(5, 1fr); */
+      /* grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); */
+      grid-template-columns: repeat(1fr 2fr);
+      /* grid-template-rows: repeat(3, 1fr 2fr); */
+      /* gap: 30px; */
+    }
+
+    .grid div { 
+      background: tomato;
+      min-height: 100px;
+    }
+
+    .grid div:nth-child(5) {
+      background: darkred;
+      /* grid-column-start: 1; */
+      /* grid-column-end: 4;  */
+      /* grid-row-start: 2; */
+      /* grid-row-end: 6;  */
+      /* grid-row: span 1;  */
+      /* grid-column: span 2;  */
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div>13</div>
+    <div>14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+  </div>
+</body>
+</html>
