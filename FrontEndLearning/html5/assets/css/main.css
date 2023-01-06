@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background: rgb(59, 59, 59);
+}
+.video {
+ margin: 2rem 2rem 2rem 12.8rem;
+}
+
+.code-example {
+    background: rgb(59, 59, 59);
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-left: 4rem;
+}
+
