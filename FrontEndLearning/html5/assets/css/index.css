@@ -1,0 +1,56 @@
+/*
+Resumo de Flex Box:
+
+Display: flex; - inicia o flex no container
+flex-grow; - da tamanho ao elemento preenchendo os espaços vazios 
+flex-shrink - o contrário do grow
+flex-basis - tamanho inicial do elemento, e o resto é preenchido pelo grow
+flex - <grow> <shrink> <basis>
+flex-direction - muda a direção que os elementos estão (row, row-reverse, column, column-reverse)
+flex-order - muda a ordem do elemento individualmente 
+justify-content - alinha os elementos no eixo principal
+aling-items - alinha os elementos no eixo secundario
+aling-self - alinha o elemento em particular
+*/
+
+body {
+    background: gray;
+    height: 1000px;
+}
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: relative;
+}
+ 
+.box {
+    height: 100px;
+    width: 100px;      
+    /* flex-grow: 1; */
+    /* flex-basis: 500px; */ /*seta o tamanho de um elemento*/
+}
+
+ .first {
+    background-color: rgb(94, 218, 255);
+    /* flex-grow: 2; */
+    /* order: 3; */
+}
+
+.second {
+    background-color:  rgb(245, 55, 144);
+    align-self: flex-end;
+    /* flex-grow: 3; */
+    /* order: 2; */
+}
+
+.third {
+    background-color: rgb(255, 200, 129);
+    /* order: 1; */
+    /* flex-grow: 4; */
+    /* flex-shrink: 4; */
+}
