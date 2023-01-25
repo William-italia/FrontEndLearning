@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #dbdbdb;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    margin: 0px auto;
+    background: #fff;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.container div {
+    width: 33%;
+    /* border: 5px solid black; */
+    margin: 5px;
+}
+
+.container div img {
+    display: block;
+    width: 100%;
+}
+
+.container div a {
+    display: block;
+    padding: 25px;
+    background: #afafaf;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.container div a:hover {
+    background: #535353;
+    color: #fff;
+}

@@ -3,6 +3,8 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+
+
 # User-specific files
 *.rsuser
 *.suo
@@ -350,3 +352,4 @@ MigrationBackup/
 .ionide/
 
 Section-ignore
+FrontEndLearning/CSSANDBOX/styles.css
