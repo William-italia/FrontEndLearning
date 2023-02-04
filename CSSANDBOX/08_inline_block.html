@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display: Inline & Block</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+        
+    ul {
+            list-style: none;
+            background-color: #4c6ca0;
+            border-radius: 5px;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            display: inline-block;           
+        }
+
+        ul li a {
+            display: inline-block;
+            color: #fff;
+            /* margin-left: 30px; */
+            padding: 15px 20px;
+            text-decoration: none;
+            transition: .5s;
+        }
+
+        ul li a:hover {
+            background-color: #446190;
+        }
+
+        .h3-bomdia {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+        }
+        
+        .container {
+            /* display: flex; */
+            /* align-items: center; */
+            /* justify-content: center; */
+        }
+        
+        .box {
+            display: inline-block;
+            width: 32.8%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 15px;
+            word-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Fashion </a></li>
+    </ul>
+
+    <h3 class="h3-bomdia">bom dia meu guerreiro</h3>
+    <img src="https://img.freepik.com/fotos-gratis/a-paisagem-bonita-do-sol-da-praia-com-um-barco_1112-212.jpg" alt="imagem bonita kkkk">
+
+    <br><br>
+    <div class="container">
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, voluptatum expedita quos error laborum nobis cupiditate distinctio repudiandae ipsum ducimus amet labore aperiam dolorem.</p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, voluptatum expedita quos error laborum nobis cupiditate distinctio repudiandae ipsum ducimus amet labore aperiam dolorem.</p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, voluptatum expedita quos error laborum nobis cupiditate distinctio repudiandae ipsum ducimus amet labore aperiam dolorem.</p>
+        </div>
+    </div>
+</body>
+</html>
