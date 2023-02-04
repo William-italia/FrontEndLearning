@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model / Margin & Padding</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            background: #f4f4f4;
+            border: 2px #333  solid;
+            width: 500px;
+
+            /* padding on all sides */
+             
+                padding: 20px; 
+            
+
+            /* padding per side */
+            
+                padding-top: 10px;
+                padding-right: 20px;
+                padding-bottom: 10px;
+                padding-left: 20px; 
+            
+
+            /* padding shorthand =  Top/Bottom Right/Left*/
+             
+                padding: 10px 25px; 
+            
+
+            /* Padding shorthand = top, right, bottom, left */
+                padding: 15px 30px 25px 30px;
+
+
+            /* Margin on all sides*/
+                margin: 20px;
+
+                /* Margin per side */
+            
+                margin-top: 10px;
+                margin-right: 20px;
+                margin-bottom: 10px;
+                margin-left: 20px; 
+            
+
+            /* Margin shorthand =  Top/Bottom Right/Left*/
+             
+                margin: 10px 25px; 
+            
+
+            /* Margin shorthand = top, right, bottom, left */
+                margin: 15px 30px 25px 30px;
+
+        }
+
+        .box h3 {
+            background: red;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>Box One</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, eligendi reprehenderit mollitia error unde odio dolore expedita sunt explicabo. Cum, eveniet!</p>
+    </div>
+    <div class="box">
+        <h3>Box Two</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, eligendi reprehenderit mollitia error unde odio dolore expedita sunt explicabo. Cum, eveniet!</p>
+    </div>
+</body>
+</html>
