@@ -71,6 +71,9 @@ a {
     padding: 5px;
     margin-top: 5px;
 }
+.form-group input:focus {
+    outline: none;
+}
 
 .btn {
     cursor: pointer;
