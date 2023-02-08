@@ -12,47 +12,50 @@ body {
 
 a {
     text-decoration: none;
-    color: #5f95f4;
+    color: #333;
 }
 
+/* container */
 .container {
-    background: #fff;
+    margin:  auto;
+    max-width: 400px;
     position: relative;
     top: 200px;
-    width: 400px;
-    height: 650px;
-    margin: auto;
-    padding: 20px 35px;
+    padding: 20px;
 }
 
-.form-group {
-    margin-top: 25px;
+
+/* .form-wrap */
+.form-wrap {
+    background: #fff;
+    color: #333;
+    padding: 20px 30px;
+    border-radius: 15px;
+}
+
+.form-wrap h1, .form-wrap p, footer p {
+    text-align: center;
 }
 
 .form-wrap h1 {
     color: #3b7be9;
-    font-size: 40px;
-    text-align: center;
-}
-
-.form-wrap p {
-    text-align: center;
-}
-
-.border-bottom-p  {
-    font-size:18px;
-    margin-top: 25px;
+    font-size: 30px;
     position: relative;
 }
 
-.border-bottom-p::before {
+.form-wrap h1::before {
     content: "";
     position: absolute;
-    border-bottom: 3px solid #5f95f4;
+    border-bottom: 3px solid #3b7be9;
     width: 80%;
     left: 35px;
-    bottom: 32px;
-    /* top: 25px; */
+    top: 45px;
+}
+
+.subtitle {
+    font-size:15px;
+    padding: 5px;
+    margin: 30px 0 8px 0;
 }
 
 .form-wrap .bottom-text {
@@ -61,31 +64,38 @@ a {
     line-height: 20px;
 }
 
+/* form-group */
+.form-wrap .form-group {
+    margin-top: 25px;
+}
+
 
 .form-group input {
     display: block;
-    border: 1px solid #b7b7b7;
-    border-radius: 5px;
     width: 100%; 
     height: 2rem;
     padding: 5px;
     margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #666;
+    color: #666;
 }
 .form-group input:focus {
     outline: none;
 }
 
+/* btn  */
 .btn {
-    cursor: pointer;
-    background-color: #5f95f4;
-    color: #fff;
     display: block;
     width: 100%;
     padding: .5rem;
     margin: 20px 0 25px 0;
+    background-color: #5f95f4;
+    color: #fff;
     border: none;
     border-radius: 5px;
     font-size: 15px;
+    cursor: pointer;
     transition: .5s;
 }
 .btn:hover {
@@ -101,10 +111,26 @@ a {
     font-size: 15px;
 }
 
-footer p {
-    font-size: 15px;
+ .form-wrap .bottom-text {
+    font-size: 13px;
+    line-height: 1.4em;
+    margin-top: 15px;
+ }
+/* footer */
+ footer {
     text-align: center;
-    margin-top: 45px;
+    margin-top: 10px;
     color: #fff;
-    font-weight: 600;
+} 
+
+footer a {
+    color: #7ba9f8;
+}
+.linha {
+    position: relative;
+    border: 1px dashed #a3a3a3;
+}
+
+.linha1 {
+    top: 8px;
 }
