@@ -6,332 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position</title>
     <style>
-        body  {
-            background: #6a6a6a;
+        body {
+            height: 5000px;
         }
 
         img {
             display: block;
+            width: 150px;
+            height: 150px;
             margin: auto;
-            position: fixed;
-            width: 200px;
-            top: 350px;
             }
-        .container {
-            position: relative;
-        }
-        .box {
-            position: absolute;
-            height: 50px;
-            width: 50px;
-        }
-        /* Cores das caixas */
-        #box-black { 
-            position: relative;
-            background: black;
-        }
-        #box-red {
-            background: red;
-        }
-        #box-white {
-            background: white;
-        }
 
-        /* caixas da estrutura */
+            .box {
+                width: 100px;
+                height: 100px;
+            }
+            
+            .container {
+                position: relative;
+                width: 500px;
+                height: 500px;
+                background-color: #333;
+            }
 
-        /* black */
-        .black0 {
-            left: 200px;
-        }
-        .black1 {
-            top: -50px;
-            left: 150px;
-        }
-        .black2 {
-            top: -100px;
-            left: 100px;
-        }
-        .black3 {
-            top: -100px;
-            left: 50px;
-        }
-        .black4 {
-            top: -150px;
-            left: 250px;
-        }
-        .black5 {
-            top: -150px;
-            left: 300px;
-        }
-        .black6 {
-            top: -250px;
-            left: 350px;
-        }
-        .black7 {
-            top: -350px;
-            left: 400px;
-        }
-        .black8 {
-            top: -400px;
-            left: 450px;
-        }
-        .black9 {
-            top: -450px;
-            left: 500px;
-        }
-        .black10 {
-            top: -450px;
-            left: 550px;
-        }
-        .black11 {
-            top: -450px;
-            left: 0px;
-        }
-        .black12 {
-            top: -500px;
-            left: 600px;
-        }
-        .black13 {
-            top: -500px;
-            left: 0px;
-        }
-        .black14 {
-            top: -550px;
-            left: 600px;
-        }
-        .black15 {
-            top: -550px;
-            left: 0px;
-        }
-        .black16 {
-            top: -600px;
-            left: 600px;
-        }
+            #box-1 {
+                /*position: static;  Padrão */
+                position: relative;
+                top: 400px;
+                left: 200px;
+                z-index: 1;
+                background: red;
+            }
 
-        /* red */
-        .red0 {
-            top: -800px;
-            left: 100px;
-        }
-        .red1 {
-            top: -800px;
-            left: 150px;
-        }
-        .red2 {
-            top: -800px;
-            left: 200px;
-        }
-        .red3 {
-            top: -800px;
-            left: 400px;
-        }
-        .red4 {
-            top: -800px;
-            left: 450px;
-        }
-        .red5 {
-            top: -800px;
-            left: 500px;
-        }
-        .red6 {
-            top: -750px;
-            left: 50px;
-        }
-        .red7 {
-            top: -750px;
-            left: 200px;
-        }
-        .red8 {
-            top: -750px;
-            left: 250px;
-        }
-        .red9 {
-            top: -750px;
-            left: 350px;
-        }
-        .red10 {
-            top: -750px;
-            left: 400px;
-        }
-        .red11 {
-            top: -750px;
-            left: 450px;
-        }
-        .red12 {
-            top: -750px;
-            left: 500px;
-        }
-        .red13 {
-            top: -750px;
-            left: 550px;
-        }
-        .red14 {
-            top: -700px;
-            left: 50px;
-        }
-        .red15 {
-            top: -700px;
-            left: 150px;
-        }
-        .red16 {
-            top: -700px;
-            left: 200px;
-        }
-        .red17 {
-            top: -700px;
-            left: 250px;
-        }
-        .red18 {
-            top: -700px;
-            left: 300px;
-        }
-        .red19 {
-            top: -700px;
-            left: 350px;
-        }
-        .red20 {
-            top: -700px;
-            left: 400px;
-        }
-        .red21 {
-            top: -700px;
-            left: 450px;
-        }
-        .red22 {
-            top: -700px;
-            left: 500px;
-         }
-        .red23 {
-            top: -700px;
-            left: 550px;
-         }
-        .red24 {
-            top: -650px;
-            left: 50px;
-         }
-        .red25 {
-            top: -650px;
-            left: 100px;
-         }
-        .red26 {
-            top: -650px;
-            left: 150px;
-         }
-        .red27 {
-            top: -650px;
-            left: 200px;
-         }
-        .red28 {
-            top: -650px;
-            left: 250px;
-         }
-        .red29 {
-            top: -650px;
-            left: 300px;
-         }
-        .red30 {
-            top: -650px;
-            left: 350px;
-         }
-        .red31 {
-            top: -650px;
-            left: 400px;
-         }
-        .red32 {
-            top: -650px;
-            left: 450px;
-         }
-        .red33 {
-            top: -650px;
-            left: 500px;
-         }
-        .red34 {
-            top: -650px;
-            left: 550px;
-         }
-  
-        
-        /* White */
-        .white0 {
-            top: -750px;
-            left: 100px;
-        }
-        .white1 {
-            top: -750px;
-            left: 150px;
-        }
-        .white2 {
-            top: -700px;
-            left: 100px;
-        }
+            #box-2 {
+                position: absolute;
+                top: 100px;
+                left: 100px;
+                background: yellow;
+            }
+
+            #box-3 {
+                position: absolute;
+                top: 100px;
+                left: 300px;
+                background: green;
+            }
+            
+            #box-4 {
+                position: fixed;
+                background: blue;
+                z-index: 1;
+            }
+            
+            #box-5 {
+                position: sticky;
+                top: 0;
+                background: orange ;
+            }
     </style>
 </head>
 <body>
-    <div class="container container-black">
-        <div id="box-black" class="box black0"></div>
-        <div id="box-black" class="box black1"></div>
-        <div id="box-black" class="box black2"></div>
-        <div id="box-black" class="box black3"></div>
-        <div id="box-black" class="box black4"></div>
-        <div id="box-black" class="box black5"></div>
-        <div id="box-black" class="box black6"></div>
-        <div id="box-black" class="box black7"></div>
-        <div id="box-black" class="box black8"></div>
-        <div id="box-black" class="box black9"></div>
-        <div id="box-black" class="box black10"></div>
-        <div id="box-black" class="box black11"></div>
-        <div id="box-black" class="box black12"></div>
-        <div id="box-black" class="box black13"></div>
-        <div id="box-black" class="box black14"></div>
-        <div id="box-black" class="box black15"></div>
-        <div id="box-black" class="box black16"></div>
+    <div id="box-1" class="box"></div>
+    <div class="container">
+    <div id="box-2" class="box"></div>
+    <div id="box-3" class="box"></div>'
     </div>
-    <div class="container container-red">
-        <div id="box-red" class="box red0"></div>
-        <div id="box-red" class="box red1"></div>
-        <div id="box-red" class="box red2"></div>
-        <div id="box-red" class="box red3"></div>
-        <div id="box-red" class="box red4"></div>
-        <div id="box-red" class="box red5"></div>
-        <div id="box-red" class="box red6"></div>
-        <div id="box-red" class="box red7"></div>
-        <div id="box-red" class="box red8"></div>
-        <div id="box-red" class="box red9"></div>
-        <div id="box-red" class="box red10"></div>
-        <div id="box-red" class="box red11"></div>
-        <div id="box-red" class="box red12"></div>
-        <div id="box-red" class="box red13"></div>
-        <div id="box-red" class="box red14"></div>
-        <div id="box-red" class="box red15"></div>
-        <div id="box-red" class="box red16"></div>
-        <div id="box-red" class="box red17"></div>
-        <div id="box-red" class="box red18"></div>
-        <div id="box-red" class="box red19"></div>
-        <div id="box-red" class="box red20"></div>
-        <div id="box-red" class="box red21"></div>
-        <div id="box-red" class="box red22"></div>
-        <div id="box-red" class="box red23"></div>
-        <div id="box-red" class="box red24"></div>
-        <div id="box-red" class="box red25"></div>
-        <div id="box-red" class="box red26"></div>
-        <div id="box-red" class="box red27"></div>
-        <div id="box-red" class="box red28"></div>
-        <div id="box-red" class="box red29"></div>
-        <div id="box-red" class="box red30"></div>
-        <div id="box-red" class="box red31"></div>
-        <div id="box-red" class="box red32"></div>
-        <div id="box-red" class="box red33"></div>
-        <div id="box-red" class="box red34"></div>
-    </div>
-    <div class="container container-white">
-        <div id="box-white" class="box white0"></div>
-        <div id="box-white" class="box white1"></div>
-        <div id="box-white" class="box white2"></div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <img src="https://img2.gratispng.com/20180329/tuw/kisspng-heart-pixel-art-clip-art-pixel-5abd97e2c49a13.6923008715223746268053.jpg" alt="">
+    <div id="box-4" class="box"></div>
+    <div id="box-5" class="box"></div>
+   
+    <!-- <img src="https://img2.gratispng.com/20180329/tuw/kisspng-heart-pixel-art-clip-art-pixel-5abd97e2c49a13.6923008715223746268053.jpg" alt=""> -->
 </body>
 </html>
