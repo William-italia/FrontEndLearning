@@ -1,3 +1,3 @@
 first course challenge
 
-![screenshot Form styling](./Screenshot_form.png)
+![screenshot Form styling](./img/Screenshot_form.png)
