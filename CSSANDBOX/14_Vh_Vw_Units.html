@@ -6,10 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vh & Vw Units</title>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            position: relative;
+            background: #333 url('https://images.unsplash.com/photo-1672699303810-0b55ddad76b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80') no-repeat center center/cover;
+            color: #fff;
+            height: 100vh;
+            /* width: 50vw; */
+            text-align: center;
+            padding: 2rem;
+            z-index: 1;
+        }
+
+        header::before {
+            position: absolute;
+            content: " ";
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: #333;
+            opacity: .88;
+            z-index: -1;
+        }
+
+        header .container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header .container h1 {
+            font-size: 2.1rem;
+            margin-bottom: 1rem;
+        }
+
+        header .container p {
+            margin-bottom: 1.6rem;
+            line-height: 1.5em;
+        }         
+        .btn {
+            background: inherit;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: .85rem 2rem;
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: .63rem;
+            transition: .5s;
+        }
         
+        .btn:hover {
+            background-color: #00000065;
+            color: #fff;
+        }
+
+        section {
+            padding: 10rem;
+        }
     </style>
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <h1>Welcome To Our Website</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, minus, atque maxime itaque voluptatum quasi distinctio dicta, tempora molestiae voluptas consectetur deleniti qui maiores quos!</p>
+            <a href="#" class="btn">Find Out More</a>
+        </div>
+    </header>
+    <section>
+        <h3>About Our Company</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sequi, odio quo aliquam quos numquam incidunt quisquam et dolorum ab molestiae nobis accusantium eum laudantium facilis laboriosam inventore fugiat, nihil blanditiis labore nam dolores! Voluptatibus distinctio maiores magni cumque nobis temporibus veniam vitae, harum quae, accusantium molestiae atque amet culpa sint dolorem quod nisi quis asperiores accusamus. Quisquam, itaque.</p>
+    </section>
 </body>
 </html>
