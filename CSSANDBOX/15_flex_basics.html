@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basics</title>
+    <style>
+        body {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .item {
+            padding: 1rem;
+            background: #444;
+            margin: 1rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+        .item-1,
+        .item-2, 
+        .item-3 {
+            font-size: 2rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .item-1:hover {
+            background: linear-gradient(to top left, #17b9ff, #028be0);
+            color: #fff;
+        }
+
+        .item-2:hover {
+            background: linear-gradient(to top left, #28b487, #7dd56f);
+            color: #fff;   
+        }
+
+        .item-3:hover {
+            background: linear-gradient(to top left, #ffd903, #ff9d00);
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+<div class="flex-container">
+    <div class="item item-1">
+        <p>Item 1</p>
+    </div>
+    <div class="item item-2">
+        <p>Item 2</p>
+    </div>
+    <div class="item item-3">
+        <p>Item 3</p>
+    </div>
+</div>
+</body>
+</html>
