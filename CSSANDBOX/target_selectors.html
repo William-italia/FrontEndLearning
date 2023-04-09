@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target Selectors Css</title>
+    <style>
+        /* direct child */
+        div > p {
+            background-color: #ddd ;
+        }
+
+        /* direct after */
+        div + p {
+            background-color: #333;
+            color: #fff ;
+        }
+
+        /* By attribute */
+        a[target] {
+            background: red;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <ul>
+            <li>item 1</li>
+            <li><p>Item 2</p></li>
+            <li>item 3</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <a href="#" target="_blank">Page 1</a>
+    <a href="#" target="_blank">Page 2</a> 
+    <a href="http://google.com" target="_blank">Google</a> 
+</body>
+</html>
