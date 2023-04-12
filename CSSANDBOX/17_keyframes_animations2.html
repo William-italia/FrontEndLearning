@@ -17,35 +17,43 @@
             position: relative;
             top: 0;
             left: 0;
-            animation: animate1 5s forwards ease-in-out;
+            animation: animate1 5s infinite ease-in-out;
+            border: 2px solid aqua;
+            border-radius: 0 0 0 50%;
+            background: url(./Screenshot\ 2023-03-16\ 024956.png) center center/cover;
         }
-
+        
         @keyframes animate1 {
             25% {
-               top: 0;
-               left: 300px;
-            }
-
-            50% {
-                top: 300px;
+                top: 0;
                 left: 300px;
-            }
-
-            75% {
-                top: 300px;
-                left: 0;
-            }
-
-            100% {
-              top: 0;
-              left: 0;
+                border-color: aqua;
+                border-radius: 50% 0 0 0;
+        }
+        
+        50% {
+            top: 300px;
+            left: 300px;
+            border-color: red;
+            border-radius: 50% 50% 0 0;
+        }
+        
+        75% {
+            top: 300px;
+            left: 0;
+            border-color: yellow;
+            border-radius: 50% 50% 50% 0;
+        }
+        
+        100% {
+            top: 0;
+            left: 0;
+            border-color: chocolate;
             }
         }
     </style>
 </head>
 <body>
-    <div class="box">
-
-    </div>
+    <div class="box"></div>
 </body>
 </html>
