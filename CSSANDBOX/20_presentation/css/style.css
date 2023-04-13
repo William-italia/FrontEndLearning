@@ -4,9 +4,14 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
+    overflow-y: hidden;
+    overflow-X: hidden;
 }
 
 a {
@@ -25,10 +30,22 @@ a {
     padding: 15rem;
 }
 
+.section h1{
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.section p {
+    text-align: center;
+    line-height: 1.7em;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
 .btns {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .up {
@@ -37,38 +54,88 @@ a {
 
 .btn {
     padding: 1rem 2rem;
-    margin: 1.5rem;
-    border-radius: 1rem;
     font-weight: 600;
+    margin: .4rem;
 }
 
 .btn-dark {
     background: #333;
     color: #fff;
+    transition: all .5s ease-in;
 }
 
 .btn-light {
     background-color: #fff;
     color: #333;
+    transition: all .5s ease-in;
 }
 
-#section-one {
+.btn-light:hover {
     background-color: #333;
     color: #fff;
 }
 
-#section-two {
+.btn-dark:hover {
+    background-color: #fff;
+     color: #333;
+}
+
+#section-one {
     background-color: rgb(0, 155, 155);
     color: #fff;
 }
 
-#section-one h1, #section-two h1{
-    font-size: 3rem;
-    font-weight: 800;
-    margin-bottom: 2rem;
+#section-two {
+    background-color: rgb(185, 163, 122);
+    color: #fff;
 }
 
-#section-one p, #section-two p {
-    text-align: center;
-    line-height: 1.4em;
+#section-three {
+    background-color: rgb(0, 99, 112);
+    color: #fff;
+}
+
+#section-four {
+    background-color: rgb(115, 43, 187);
+    color: #fff;
+    position: relative;
+}
+
+
+#section-one .title{
+    transform: translateY(-1200px);
+    animation: heading .8s forwards ease-in;
+}
+
+#section-one .paragraph {
+    transform: translateX(-5000px) ;
+    animation: paragraph 1.5s forwards ease-in;
+}
+
+@keyframes heading {
+    to {
+        transform: translateY(0);
+    }
+}
+@keyframes paragraph {
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* --------------- */
+.box {
+    position: absolute;
+     bottom: 0;
+     right: 0;
+}
+
+.box i{
+    font-size: 3rem;
+    margin: 2rem;
+    transition: color, .5s ease-in;
+}
+
+.box i:hover {
+    color: #333;
 }
