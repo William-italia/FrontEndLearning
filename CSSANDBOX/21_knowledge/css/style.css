@@ -24,20 +24,88 @@ body {
  margin: .8rem;
 }
 
-ul li {
-    position: relative;
+#timeline ul {
+    padding: 5rem;
+}
+
+#timeline ul li {
     list-style: none;
-    background-color: #fff;
+    position: relative;
     width: 6px;
     margin: 0 auto ;
+    padding-top: 5rem;
+    background-color: #fff;
 }
 
 
-ul li > div {
+#timeline ul li > div {
     position: relative;
-    background: #5b7bb4;
-    margin: 0rem 2rem;
-    padding: 2rem;
+    bottom: 0;
     width: 500px;
-    position: relative;
+    padding: 2rem;
+    background: #5b7bb4;
+    transition: all 0.5s ease-in-out;
+    visibility: inherit;
+    opacity: 0;
 }
+
+#timeline ul li:nth-child(odd) div {
+    left: 40px;
+    transform: translate(200px);
+}
+
+#timeline ul li:nth-child(even) div {
+    right: 33.5rem; 
+    transform: translate(-200px);
+}
+
+#timeline ul li::after {
+    position: absolute;
+    content: ' ';
+    width: 25px;
+    height: 25px;
+    background: red;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+    border-radius: 100%;
+    background: inherit;
+    transition: background 0.5s ease-in-out;
+}
+
+#timeline div::before {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#timeline ul li:nth-child(odd) div:before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #5b7bb4 transparent transparent;
+}
+
+/* #timeline ul li:nth-child(even) div:before {
+    right: -15px;
+    rotate: 62deg;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #5b7bb4 transparent transparent;
+} */
+#timeline ul li:nth-child(even) div:before {
+    right: -15px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent #5b7bb4 ;
+}
+
+ #timeline ul li.show div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+ }
+
+ #timeline ul li.show:after {
+    background: #5b7bb4;
+  } 
