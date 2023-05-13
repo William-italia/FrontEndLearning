@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#navbar ul {
+  display: 	flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#navbar ul li {
+  padding: 2rem;
+  list-style: none;
+  position: relative;
+}
+
+#navbar ul li > i {
+  position: absolute;
+  padding: .2rem .5rem;
+}
+
+
+#navbar ul li ul  {
+  display: none;
+}
+
+#navbar ul li:hover {
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+#navbar ul li.Services:nth-child(3),
+#navbar ul li.blog:nth-child(4) {
+  padding: 2rem 2rem 2rem 1rem;
+}
+
+#navbar ul li:hover ul {
+  display: block;
+  position: absolute;
+  background-color: #333;
+  left: 0;
+  width: 200px;
+  margin-top: 2rem;
+}
+
+#navbar ul li:hover ul li:hover {
+  display: block;
+  color: #333;
+  background: #f4f4f4;
+}
+
+#navbar ul li:hover ul li span {
+  float: right;
+  background: #fff;
+  color: #333;
+  padding: .2rem .4rem;
+  border-radius: .4rem;
+  font-size: .8rem;
+  text-align: center;
+}
+
+#navbar ul li:hover ul li:hover span {
+  background: orange;
+  color: #fff;
+}
+
+#showcase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92vh;
+  background: orange;
+  color: #fff;
+  overflow: hidden;
+}
+
+#showcase .one {
+  font-size: 4rem;
+  color: #333;
+  border-bottom: solid .2rem black;
+}
