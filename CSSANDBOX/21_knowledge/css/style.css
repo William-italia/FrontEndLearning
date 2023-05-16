@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    background: #425b84;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0rem;
+    background: #5b7bb4;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.container h1 {
+ margin: .8rem;
+}
+
+#timeline ul {
+    padding: 5rem;
+}
+
+#timeline ul li {
+    list-style: none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto ;
+    padding-top: 5rem;
+    background-color: #fff;
+}
+
+
+#timeline ul li > div {
+    position: relative;
+    bottom: 0;
+    width: 500px;
+    padding: 2rem;
+    background: #5b7bb4;
+    transition: all 0.5s ease-in-out;
+    visibility: inherit;
+    opacity: 0;
+}
+
+#timeline ul li:nth-child(odd) div {
+    left: 40px;
+    transform: translate(200px);
+}
+
+#timeline ul li:nth-child(even) div {
+    right: 33.5rem; 
+    transform: translate(-200px);
+}
+
+#timeline ul li::after {
+    position: absolute;
+    content: ' ';
+    width: 25px;
+    height: 25px;
+    background: red;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+    border-radius: 100%;
+    background: inherit;
+    transition: background 0.5s ease-in-out;
+}
+
+#timeline div::before {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#timeline ul li:nth-child(odd) div:before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #5b7bb4 transparent transparent;
+}
+
+/* #timeline ul li:nth-child(even) div:before {
+    right: -15px;
+    rotate: 62deg;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #5b7bb4 transparent transparent;
+} */
+#timeline ul li:nth-child(even) div:before {
+    right: -15px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent #5b7bb4 ;
+}
+
+ #timeline ul li.show div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+ }
+
+ #timeline ul li.show:after {
+    background: #5b7bb4;
+  } 
+
+
+  @media(max-width: 900px) {
+    #timeline ul li div {
+      width: 250px;
+    }
+  
+    #timeline ul li:nth-child(even) div {
+      left: -284px;
+    }
+  }
+  
+  @media(max-width: 600px) {
+    #timeline ul li {
+      margin-left: 20px;
+    }
+  
+    #timeline ul li div {
+      width: calc(100vw - 90px);
+    }
+  
+    #timeline ul li:nth-child(even) div {
+      left: 40px;
+    }
+  
+    #timeline ul li:nth-child(even) div:before {
+      left: -15px;
+      border-width: 8px 16px 8px 0;
+      border-color: transparent #5b7bb4 transparent transparent;
+    }
+  }
