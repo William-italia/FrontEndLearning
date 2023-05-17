@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul, a {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.btn-color {
+    display: inline-block;
+    background-color: rgb(201, 3, 3);
+    padding: .5rem;
+    color: #fff;
+    border-radius: .1rem;
+    transition: .3s ease-in-out;
+}
+
+.btn-color:hover {
+    color: #fff;
+    background: #000;
+}
+
+.category {
+    font-size: .5rem;
+    border-radius: 100px;
+    display: inline-block;
+    padding: .5rem;
+}
+
+.sports {
+    background-color: orange;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    /* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; */
+    font-weight: bold;
+}
+
+.navbar img {
+    width: 200px;
+}
+
+.navbar .social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 2rem;
+    width: 100%;
+    color: #555;
+}
+
+.navbar .social a {
+    padding: 0 .5rem;
+    transition: color .3s ease-in-out;
+}
+
+.navbar .social a:hover {
+    color: red;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.navbar ul li {
+    padding: 0 .5rem;
+}
+
+/* showcase */
+.showcase {
+    position: relative;
+    background: url(../img/featured.jpg) no-repeat center center/cover;
+    color: #fff;
+    z-index: 1;
+}
+
+.showcase::before {
+    position: absolute;
+    content: '';
+    background-color: #000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    z-index: -1;
+}
+
+.container {
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.showcase .showcase-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    height: 50vh;
+}
+
+.showcase .showcase-content > a {
+    padding: .8rem 2rem;
+    margin-top: 1rem;
+}
