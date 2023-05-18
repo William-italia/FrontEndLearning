@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
 
+:root {
+    --primary-color: #c72727;
+    --secondary-color: #f99500;
+    --light-color: #f3f3f3;
+    --dark-color: #333;
+    --max-width: 1100px;
+  
+  }
+  
+  .category {
+    --sports-color: #f99500;
+    --ent-color: #a66bbe;
+    --tech-color: #009cff;
+  }
+
 * {
     padding: 0;
     margin: 0;
@@ -15,6 +30,10 @@ ul, a {
     list-style: none;
     text-decoration: none;
     color: inherit;
+}
+
+img {
+    width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,19 +53,39 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-color:hover {
     color: #fff;
-    background: #000;
+    background: red;
 }
+
+.py-1 { padding: 1.5rem 0 }
+.py-2 { padding: 2rem 0 }
+.py-3 { padding: 3rem 0 }
+.p-1 { padding: 1.5rem }
+.p-2 { padding: 2rem }
+.p-3 { padding: 3rem }
 
 .category {
-    font-size: .5rem;
-    border-radius: 100px;
     display: inline-block;
-    padding: .5rem;
-}
+    color: #fff;
+    font-size: 0.55rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0.6rem;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+  }
+  
+.sports { background: var(--sports-color) }
+.ent { background: var(--ent-color) }
+.tech { background: var(--tech-color) }
 
-.sports {
-    background-color: orange;
-}
+.card {
+    background: #fff;
+    padding: 1rem;
+  }
+  
+  .bg-dark {
+    background: var(--dark-color);
+    color: #fff;
+  }
 
 .navbar {
     display: flex;
@@ -65,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 5rem;
     width: 100%;
     color: #555;
 }
@@ -123,11 +162,39 @@ h1, h2, h3, h4, h5, h6 {
     height: 50vh;
 }
 
-.showcase .showcase-content h1 {
-    font-weight: bold;
+.showcase .showcase-content {
+    padding: 0 0 2rem 0;
 }
 
+.showcase .showcase-content div {
+    margin-bottom: .8rem;
+}
+
+.showcase-content h1 {
+    margin-bottom: .55rem;
+}
+
+.showcase .showcase-content p {
+  margin-bottom: 1rem;
+}
+
+
 .showcase .showcase-content > a {
-    padding: .6rem 2rem;
-    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+}
+
+/* ARTICLES */
+#home-articles .art-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+#home-articles .art-container > *:first-child, 
+#home-articles .art-container > *:last-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    grid-column: 1 / span 2;
 }
