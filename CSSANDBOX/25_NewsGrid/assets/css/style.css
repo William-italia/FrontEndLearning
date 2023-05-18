@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     padding: 0.4rem 0.6rem;
     border-radius: 15px;
-    margin-bottom: 0.5rem;
+    margin: 0.5rem 0;
   }
   
 .sports { background: var(--sports-color) }
@@ -84,6 +84,10 @@ h1, h2, h3, h4, h5, h6 {
   
   .bg-dark {
     background: var(--dark-color);
+    color: #fff;
+  }
+  .bg-red {
+    background: var(--primary-color);
     color: #fff;
   }
 
@@ -184,17 +188,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ARTICLES */
-#home-articles .art-container{
+#home-articles {
+    padding: 2rem;
+    background: #fff;
+}
+
+#home-articles .art-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
 }
 
-#home-articles .art-container > *:first-child, 
+#home-articles .art-container > *:last-child,
+#home-articles .art-container > *:first-child {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 1 / span 2;
+}
+
 #home-articles .art-container > *:last-child {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
+    grid-column: 2 / span 2;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    grid-column: 1 / span 2;
 }
